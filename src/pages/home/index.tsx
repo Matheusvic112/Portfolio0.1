@@ -23,6 +23,8 @@ import {
   ProjectsAreaContent,
   ProjectAreaWrapperColumns,
 } from "./style";
+import AboutMe from "../about me";
+import SobreMim from "../about me";
 
 
 export const Home = (): JSX.Element => {
@@ -31,9 +33,7 @@ export const Home = (): JSX.Element => {
       <Header>
         <Container>
           <HeaderContent>
-            <Text as="h1" type="heading1" color="grey5">
-              Criando experiências por meio da tecnologia{" "}
-            </Text>
+            
             <Text type="body1" color="grey6">
               Sou estudante de programação na Kenzie Academy Brasil, participei
               de diversos projetos resolvendo problemas de alto nível e
@@ -43,19 +43,20 @@ export const Home = (): JSX.Element => {
               <Button as="a" href="#projetos">
                 Projetos
               </Button>
-              <Button as="a" href="#tecnologias" type="btLink" color="grey5">
+              <Button as="a" href="#tecnologias"  >
                 Tecnologias
               </Button>
+          
+              <SobreMim/>
+
             </HeaderButtonsArea>
           </HeaderContent>
         </Container>
       </Header>
-      <StackSection id="tecnologias">
+      <StackSection id="tecnologias"  >
         <Container>
-          <Text as="h4" type="heading3" color="grey1">
-            Ferramentas que domino
-          </Text>
-          <StackCards>
+    
+          <StackCards >
             {stackData.map((stack, index) => (
               <Stack key={index} title={stack.title} icon={stack.img} />
             ))}
@@ -66,7 +67,8 @@ export const Home = (): JSX.Element => {
         <Container>
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
-              <Text as="h2" type="heading4" color="grey1">
+
+              <Text as="h2" type="heading4" >
                 Vamos trocar uma ideia?
               </Text>
               <Text as="p" type="body1" color="grey2">

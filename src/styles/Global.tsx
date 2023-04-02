@@ -11,6 +11,7 @@ export const Container = styled("div", {
   padding: "0 1rem",
 });
 
+
 export const Flex = styled("div", {
   display: "flex",
   gap: "$1",
@@ -58,6 +59,7 @@ export const globalStyles = globalCss({
     scrollBehavior: "smooth",
   },
   a: { textDecoration: "none" },
+  
 });
 
 export const GlobalStyle: React.FC<GlobalStyleProps> = ({ children }) => {
