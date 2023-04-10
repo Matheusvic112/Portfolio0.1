@@ -53,6 +53,7 @@ const AboutUs = () => {
                   programação era a minha verdadeira paixão. A sensação de criar
                   algo do zero, de fazer com que as coisas aconteçam apenas com
                   alguns códigos, é simplesmente incrível!
+                  Meus conhecimentos incluem HTML5, CSS3 e JavaScript (ES6), bem como Github, ReactJS, TypeScript, Styled-Components, Python e Django Rest Framework. Também sou familiarizado com bancos de dados, como PostgresSQL.
                 </Text>
               </ModalBody>
             </Flex>
